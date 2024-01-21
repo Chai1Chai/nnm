@@ -1,10 +1,8 @@
-/*var date = confirm("Всплываюзее окно с выбором");
-if (date){
-    alert("Всплывающее окно");
-}
-
-prompt("ВВеди что-нибудь");
-*/
-function onClickButton() {
-    alert('You click on the button');
+function checkForm(el){
+    var name = el.name.value();
+    var pass = el.pass.value();
+    var repass = el.repass.value();
+    var state = el.state.value();
+    console.log(name + " - " + pass + " - " + repass);
+    return false;
 }
